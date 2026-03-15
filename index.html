@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Profile Card 2</title>
+  <script>
+function copyText(id, button) {
+  const text = document.getElementById(id).innerText.trim();
+
+  navigator.clipboard.writeText(text).then(() => {
+    button.classList.add("copied");
+
+    setTimeout(() => {
+      button.classList.remove("copied");
+    }, 1200);
+  });
+}
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="cover-photo">
+      <img src="profile.JPG" alt="Profile photo" class="profile" />
+    </div>
+
+    <div class="content">
+      <div class="profile-name">Garret</div>
+      <p class="role">Doorman</p>
+
+      <p class="about">
+        Thank you for your kindness and support. If you would like to leave a
+        tip electronically, please use one of the options below.
+      </p>
+
+      <div class="payment-section">
+        <div class="payment-box">
+          <h3>Canada e-Transfer</h3>
+          <div class="copy-row">
+  <span class="label">Email:</span>
+
+  <span class="copy-value" id="etransfer-email">
+    garret@email.com
+  </span>
+
+  <button
+    class="copy-icon-btn"
+    onclick="copyText('etransfer-email', this)"
+    aria-label="Copy email"
+    title="Copy email"
+  ></button>
+</div>
+
+
+<p><strong>Name:</strong> Garret</p>
+  </div>
+    <div class="payment-box">
+      <h3>US Payment Option</h3>
+     <div class="copy-row">
+  <span class="label">Venmo:</span>
+  <span class="copy-value" id="venmo-id">@garrettips</span>
+  <button
+  class="copy-icon-btn"
+  onclick="copyText('etransfer-email', this)"
+  aria-label="Copy email"
+></button>
+</div>
+      <p><strong>PayPal:</strong> paypal.me/garrettips</p>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
