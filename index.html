@@ -38,40 +38,37 @@ function copyText(id, button) {
         <div class="payment-box">
           <h3>Canada e-Transfer</h3>
           <div class="copy-row">
-  <span class="label">Email:</span>
-
-  <span class="copy-value" id="etransfer-email">
-    garret@email.com
-  </span>
-
-  <button
-    class="copy-icon-btn"
-    onclick="copyText('etransfer-email', this)"
-    aria-label="Copy email"
-    title="Copy email"
-  ></button>
-</div>
-
-
-<p><strong>Name:</strong> Garret</p>
-  </div>
-    <div class="payment-box">
-      <h3>US Payment Option</h3>
-     <div class="copy-row">
-  <span class="label">Venmo:</span>
-  <span class="copy-value" id="venmo-id">@garrettips</span>
-  <button
-  class="copy-icon-btn"
-  onclick="copyText('etransfer-email', this)"
-  aria-label="Copy email"
-></button>
-</div>
-      <p><strong>PayPal:</strong> paypal.me/garrettips</p>
-    </div>
-  </div>
-
+            <span class="label">Email:
+              <span class="copy-value text-ed" id="etransfer-email">
+                garret@email.com
+              </span>
+            </span>
+            <button
+              class="copy-icon-btn2"
+              onclick="copyText('etransfer-email', this)"
+              aria-label="Copy email"
+              title="Copy email"
+            ></button>
+          </div>
+          <p><strong>Name:</strong> Garret</p>
+          <p><strong>Note:</strong> Please add “Tip” in the message</p>
+        </div>
+        <div class="payment-box">
+          <h3>US Payment Option</h3>
+          <div class="copy-row">
+            <span class="label">Venmo:
+              <span class="copy-value text-ed" id="venmo-id">@garrettips</span>
+            </span>
+            <button
+              class="copy-icon-btn"
+              onclick="copyText('etransfer-email', this)"
+              aria-label="Copy email"
+            ></button>
+          </div>
+          <p><strong>PayPal:</strong> paypal.me/garrettips</p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
-
 </html>

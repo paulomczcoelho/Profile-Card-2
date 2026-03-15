@@ -167,6 +167,10 @@ body {
   word-break: break-word;
   line-height: 1.4;
 }
+.text-ed{
+  font-size: 16px;
+  font-weight: 400;
+}
 
 
 
@@ -182,7 +186,7 @@ body {
   cursor: pointer;
   padding: 0;
   flex-shrink: 0;
-  right:55px
+  right:0px
 }
 
 .copy-icon-btn:hover {
@@ -216,5 +220,60 @@ body {
 
 .copy-icon-btn.copied::before,
 .copy-icon-btn.copied::after {
+  border-color: #7a8f81;
+}
+
+
+
+
+
+
+
+
+
+.copy-icon-btn2 {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #f4f4f400;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  left:5px
+}
+
+.copy-icon-btn2:hover {
+  background: #e8e8e8;
+}
+
+.copy-icon-btn2::before,
+.copy-icon-btn2::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  border: 1.8px solid #333;
+  border-radius: 2px;
+  background: transparent;
+  left: 25px;
+}
+
+/* folha de trás */
+.copy-icon-btn2::before {
+  left: 8px;
+  top: 9px;
+}
+
+/* folha da frente */
+.copy-icon-btn2::after {
+  background-color: #ffffff;
+  left: 11px;
+  top: 6px;
+}
+
+.copy-icon-btn2.copied::before,
+.copy-icon-btn2.copied::after {
   border-color: #7a8f81;
 }
