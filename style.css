@@ -27,7 +27,7 @@ body {
 
 .cover-photo {
   background: url("backgroundGreen3.jpg") center/cover no-repeat;
-  height: 220px;
+  height: 185px;
   position: relative;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .about {
-  margin: 0 auto 28px;
+  margin: 0 auto 20px;
   max-width: 290px;
   line-height: 1.7;
   color: #4d5666;
@@ -144,7 +144,7 @@ body {
   }
 
   .content {
-    padding: 88px 22px 28px;
+    padding: 80px 22px 28px;
   }
 }
 .copy-row {
